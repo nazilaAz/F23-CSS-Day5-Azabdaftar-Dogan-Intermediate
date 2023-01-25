@@ -1,0 +1,39 @@
+nav {
+    width: 100vw;
+    background-color: $nav-bgcolor;
+    margin: 0 auto;
+
+    ul {
+        width: 70%;
+        margin: 0 .2rem;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        list-style: none;
+
+        li {
+            display: inline-block;
+
+            a {
+                display: flex;
+                justify-content: flex-start;
+                line-height: 6;
+                color: $link-color;
+                text-decoration: none;
+                font-family: $font-stack;
+                font-size: $font-small;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: $hover-link;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: .2rem;
+            }
+        }
+    }
+}
